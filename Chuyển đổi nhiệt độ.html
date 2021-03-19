@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<h2>Xây dựng hàm để chuyển đổi từ độ F cho trước sang độ C theo công thức sau: C = (F - 32)/1.8.</h2>
+<h2>Temperature converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celcius</p>
+<label for="con">Fahrenheit</label> <input type="number" id="con" oninput="converter()">
+<p id="cel">Celcius:</p>
+<!--<button type="button" onclick="converter()">convert</button>-->
+<script>
+    function converter(){
+        let number=document.getElementById('con').value;
+        document.getElementById('cel').innerHTML=(number-32)/1.8;g
+    }
+</script>
+</body>
+</html>
